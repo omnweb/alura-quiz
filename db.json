@@ -1,0 +1,45 @@
+{
+    "bg": "http://",
+    "title": "Título do Quiz",
+    "description": "Descrição do Quiz",
+    "questions": [
+        {
+            "image": "http://",
+            "title": "Questão número 01",
+            "description": "Descrição da questão 01",
+            "answer": 1,
+            "alternatives": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        {
+            "image": "http://",
+            "title": "Questão número 02",
+            "description": "Descrição da questão 02",
+            "answer": 2,
+            "alternatives": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        }
+    ],
+    "external": [
+        "http://"
+    ],
+    "theme": {
+        "colors": {
+            "primary": "#4caf50",
+            "secondary": "#ff9800",
+            "mainBg": "#1c1814",
+            "contrastText": "#ffffff",
+            "wrong": "#ff5722",
+            "success": "#4caf50"
+        }
+    },
+    "borderRadius": "4px"
+}

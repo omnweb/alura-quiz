@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import db from '../db.json'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -7,10 +8,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `
+// const colorPrimary =  linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: '#c31432',
   },
 }
 
