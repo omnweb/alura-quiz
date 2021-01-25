@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import db from '../db.json'
 import Widget from '../src/components/Widget/index'
 import Footer from '../src/components/Footer/index'
@@ -6,13 +5,6 @@ import QuizContainer from '../src/components/QuizContainer/index'
 import GitHubCorner from '../src/components/GitHubCorner/index'
 import QuizLogo from '../src/components/QuizLogo/index'
 import QuizBackground from '../src/components/QuizBackground/index'
-
-// export const BackgroundImage = styled.div`
-// background-image: url(${db.bg});
-// flex:1;
-// background-size: cover;
-// background-position: center;
-// `
 
 export default function Home() {
   return (
