@@ -5,18 +5,20 @@ import Footer from '../src/components/Footer/index'
 import QuizContainer from '../src/components/QuizContainer/index'
 import GitHubCorner from '../src/components/GitHubCorner/index'
 import QuizLogo from '../src/components/QuizLogo/index'
+import QuizBackground from '../src/components/QuizBackground/index'
 
-export const BackgroundImage = styled.div`
-background-image: url(${db.bg});
-flex:1;
-background-size: cover;
-background-position: center;
-`
+// export const BackgroundImage = styled.div`
+// background-image: url(${db.bg});
+// flex:1;
+// background-size: cover;
+// background-position: center;
+// `
 
 export default function Home() {
   return (
-    <BackgroundImage>
+    <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>Call of Duty Mobile</h1>
@@ -33,8 +35,9 @@ export default function Home() {
             <p>Lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
+        <Footer />
       </QuizContainer>
-      <Footer></Footer>
-    </BackgroundImage>
+      <GitHubCorner projectUrl="https://github.com/omnweb/alura-quiz" />
+    </QuizBackground>
   )
 }
