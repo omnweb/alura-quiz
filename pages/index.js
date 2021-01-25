@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import db from '../db.json'
+import Widget from '../src/components/Widget/index'
+import Footer from '../src/components/Footer/index'
 
 export const BackgroundImage = styled.div`
 background-image: url(${db.bg});
@@ -18,6 +20,8 @@ export const QuizContainer = styled.div`
     padding: 15px;
   }
 `
+
+
 export default function Home() {
   return (
     <BackgroundImage>
@@ -39,6 +43,7 @@ export default function Home() {
           </Widget.Content>
         </Widget>
       </QuizContainer>
+      <Footer></Footer>
     </BackgroundImage>
   )
 }
