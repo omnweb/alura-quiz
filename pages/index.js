@@ -1,14 +1,21 @@
-import db from '../db.json'
-import Widget from '../src/components/Widget/index'
-import Footer from '../src/components/Footer/index'
-import QuizContainer from '../src/components/QuizContainer/index'
-import GitHubCorner from '../src/components/GitHubCorner/index'
-import QuizLogo from '../src/components/QuizLogo/index'
-import QuizBackground from '../src/components/QuizBackground/index'
+import React from 'react';
+import Head from 'next/head';
+import db from '../db.json';
+import Widget from '../src/components/Widget/index';
+import Footer from '../src/components/Footer/index';
+import QuizContainer from '../src/components/QuizContainer/index';
+import GitHubCorner from '../src/components/GitHubCorner/index';
+import QuizLogo from '../src/components/QuizLogo/index';
+import QuizBackground from '../src/components/QuizBackground/index';
 
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <meta property="og:title" content="COD Mobile Quiz" />
+        <meta property="og:image" content={db.bg} />
+        <title>COD Mobile Quiz</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -31,5 +38,5 @@ export default function Home() {
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/omnweb/alura-quiz" />
     </QuizBackground>
-  )
+  );
 }
