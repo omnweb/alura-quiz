@@ -7,8 +7,11 @@ import QuizContainer from '../src/components/QuizContainer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizLogo from '../src/components/QuizLogo/index';
 import QuizBackground from '../src/components/QuizBackground/index';
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('')
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -31,12 +34,30 @@ export default function Home() {
             <h1>Respondas as questões</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Lorem ipsum dolor sit amet...</p>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+              router.push(`/quiz?name=${name}`)
+              console.log('Submentendo form')
+              // Router manda para a próxima página
+            }}>
+              <input onChange={
+                function (event) {
+                  // name = event.target.value
+                  // console.log(name)
+                  // Estado
+                  setName(event.target.value)
+
+                }
+              } placeholder="Nome" />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omnweb/alura-quiz" />
+      <GitHubCorner projectUrl="https://github.com/omnweb" />
     </QuizBackground>
   );
 }
