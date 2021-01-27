@@ -7,6 +7,8 @@ import QuizContainer from '../src/components/QuizContainer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizLogo from '../src/components/QuizLogo/index';
 import QuizBackground from '../src/components/QuizBackground/index';
+import Input from '../src/components/input/index';
+
 import { useRouter } from 'next/router'
 
 export default function Home() {
@@ -37,20 +39,10 @@ export default function Home() {
             <form onSubmit={function (event) {
               event.preventDefault();
               router.push(`/quiz?name=${name}`)
-              console.log('Submentendo form')
-              // Router manda para a próxima página
             }}>
-              <input onChange={
-                function (event) {
-                  // name = event.target.value
-                  // console.log(name)
-                  // Estado
-                  setName(event.target.value)
-
-                }
-              } placeholder="Nome" />
+              <Input onChange={(event) => { event.target.value.length >= 3 ? setName(event.target.value) : null }} placeholder="Nome" />
               <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
+                Vamos jogar {name}?
               </button>
             </form>
           </Widget.Content>
