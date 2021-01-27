@@ -8,7 +8,7 @@ import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizLogo from '../src/components/QuizLogo/index';
 import QuizBackground from '../src/components/QuizBackground/index';
 import Input from '../src/components/input/index';
-
+import Button from '../src/components/button/index';
 import { useRouter } from 'next/router'
 
 export default function Home() {
@@ -25,26 +25,29 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Call of Duty Mobile</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>Descrição do quiz informando sobre o tipo de assunto abordado nas questões.</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
-          <Widget.Header>
-            <h1>Respondas as questões</h1>
+            <h1>Quiz Call of Duty Mobile</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (event) {
               event.preventDefault();
               router.push(`/quiz?name=${name}`)
             }}>
-              <Input onChange={(event) => { event.target.value.length >= 3 ? setName(event.target.value) : null }} placeholder="Nome" />
-              <button type="submit" disabled={name.length === 0}>
+              <Input
+                onChange={(event) => {
+                  event.target.value.length >= 3 ? setName(event.target.value) : null
+                }}
+                placeholder="Nome"
+                name="Nome do Usuário"
+              />
+              <Button type="submit" disabled={name.length === 0}>
                 Vamos jogar {name}?
-              </button>
+              </Button>
             </form>
+          </Widget.Content>
+        </Widget>
+        <Widget>
+          <Widget.Content>
+            <p>Prove que vc conhece mesmo esse jogo.</p>
           </Widget.Content>
         </Widget>
         <Footer />
