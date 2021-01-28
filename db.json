@@ -26,6 +26,102 @@
                 "150",
                 "200"
             ]
+        },
+        {
+            "image": "https://www.destructoid.com//ul/531054-nuketown%20black%20ops%204.jpg",
+            "title": "Qual alternativa não é um mapa do jogo?",
+            "description": "Somente mapas principais",
+            "answer": 4,
+            "alternatives": [
+                "SHIPMENT 1944",
+                "TERMINAL",
+                "KILLHOUSE",
+                "KILLROOM"
+            ]
+        },
+        {
+            "image": "https://storage.googleapis.com/stateless-married-games/2020/09/18000f4c-call-of-duty-mobile-season-10-news.jpeg",
+            "title": "Qual das alternativas não é um modo de jogo?",
+            "description": "Multijogador",
+            "answer": 2,
+            "alternatives": [
+                "DOMINAÇÃO",
+                "MATADOR",
+                "CONTRA TODOS",
+                "MATA-MATA EM EQUIPE"
+            ]
+        },
+        {
+            "image": "https://s2.glbimg.com/mOf0tUhfL-siwkifD3Wbo79Bv-o=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/A/5/tyc135QYaFaeqtqigSJw/granadas-cod-mobile.jpg",
+            "title": "Qual desses artefatos é letal?",
+            "description": "Arremessáveis",
+            "answer": 1,
+            "alternatives": [
+                "TERMITA",
+                "PEM",
+                "CRIOBOMBA",
+                "GRANADA DE LUZ"
+            ]
+        },
+        {
+            "image": "https://pbs.twimg.com/media/EZF0GkEXkAE9Ahl.jpg",
+            "title": "Selecione a alternativacorreta:",
+            "description": "Qual opção são mapas do Battle Royale?",
+            "answer": 4,
+            "alternatives": [
+                "PIER, CAMP E SUBWAY",
+                "PIER, CAMP E REQUIRE",
+                "PIER, CAMP E KAKASHI",
+                "PIER, CAMP E SAKURA"
+            ]
+        },
+        {
+            "image": "https://cdn.ligadosgames.com/imagens/call-of-duty-mobile-helicoptero-usina-nuclear-cke.jpg",
+            "title": "Quais veículos podem ser usados?",
+            "description": "Battle Royale",
+            "answer": 3,
+            "alternatives": [
+                "BARCO, CARRO E TANQUE",
+                "BARCO, ESQUI E BICICLETA",
+                "BARCO, SNOWBOARDING E TANQUE",
+                "BARCO, DIRIGÍVEL E SKATE"
+            ]
+        },
+        {
+            "image": "https://estnn.com/wp-content/uploads/2020/04/codmobile-052b.jpg",
+            "title": "Qual não é um soldado do jogo?",
+            "description": "Personagens principais",
+            "answer": 4,
+            "alternatives": [
+                "OP. ESPECIAIS 5",
+                "MERCENÁRIO 5",
+                "SCOUT 2",
+                "COLSPAN 2"
+            ]
+        },
+        {
+            "image": "https://i.pinimg.com/originals/a6/4d/af/a64daf3e02a4629c26eaee5b53dad168.jpg",
+            "title": "Quais são tipos de de classe?",
+            "description": "Battle Royale",
+            "answer": 2,
+            "alternatives": [
+                "AÉREO, HAKER E MILICIANO",
+                "NINJA, MÉDICO E PALHAÇO",
+                "SCOUT, AÉREO E MESTRE",
+                "MESTRE, NINJA, MÉDICO"
+            ]
+        },
+        {
+            "image": "https://i.ytimg.com/vi/ZuruGp_TfLI/maxresdefault.jpg",
+            "title": "NÃO É UMA MEDALHAS DO JOGO",
+            "description": "Battle Royale",
+            "answer": 4,
+            "alternatives": [
+                "NUCLEAR",
+                "BRUTAL",
+                "IMPLACÁVEL",
+                "FURIOSO"
+            ]
         }
     ],
     "external": [
