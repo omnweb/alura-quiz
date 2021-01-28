@@ -7,8 +7,8 @@ import QuizContainer from '../src/components/QuizContainer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizLogo from '../src/components/QuizLogo/index';
 import QuizBackground from '../src/components/QuizBackground/index';
-import Input from '../src/components/input/index';
-import Button from '../src/components/button/index';
+import Input from '../src/components/Input/index';
+import Button from '../src/components/Button/index';
 import { useRouter } from 'next/router'
 
 export default function Home() {
