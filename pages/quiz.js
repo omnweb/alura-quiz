@@ -4,7 +4,7 @@ import QuizBackground from '../src/components/QuizBackground/index';
 import QuizContainer from '../src/components/QuizContainer/index';
 import QuizLogo from '../src/components/QuizLogo/index';
 import Widget from '../src/components/Widget/index';
-import Button from '../src/components/button/index';
+import Button from '../src/components/Button/index';
 import AlternativeForm from '../src/components/AlternativeForm/index';
 import Loading from '../src/components/LoadingWidget/index';
 
