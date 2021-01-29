@@ -125,15 +125,15 @@
         }
     ],
     "external": [
-        "https://naruto-quiz.llofyy.vercel.app/",
-        "https://aluraquizpokemon.cesarrobertopg.vercel.app/",
+        "https://breaking-bad-quiz.eliasnepo.vercel.app/",
+        "https://quiz-imersao-react.olucasalves.vercel.app/",
         "https://bbbquiz.kpmnta.vercel.app/"
     ],
     "theme": {
         "colors": {
             "primary": "#ffe93c",
             "secondary": "#FF8530",
-            "mainBg": "#1c1814",
+            "mainBg": "rgba(28, 25, 10,0.85)",
             "contrastText": "#000000",
             "text": "#ffffff",
             "wrong": "#ff5722",

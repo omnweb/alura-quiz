@@ -68,7 +68,7 @@ export default function Home() {
           animate="show"
         >
           <Widget.Content>
-            <h2><strong>Quizis da galera</strong></h2><br />
+            <h2><strong>Quiz's da galera</strong></h2><br />
             {/* <ul> */}
             {db.external.map((externalLink) => {
               const [projectName, githubUser] = externalLink
