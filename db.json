@@ -127,7 +127,8 @@
     "external": [
         "https://breaking-bad-quiz.eliasnepo.vercel.app/",
         "https://quiz-imersao-react.olucasalves.vercel.app/",
-        "https://bbbquiz.kpmnta.vercel.app/"
+        "https://bbbquiz.kpmnta.vercel.app/",
+        "https://aluraquizpokemon.cesarrobertopg.vercel.app/"
     ],
     "theme": {
         "colors": {
