@@ -16,30 +16,30 @@ function ResultWidget({ results }) {
         </Widget.Header>
 
             <Widget.Content>
-                <strong>
-                    Você acertou
+                <p>
+                    <strong>
+                        Você acertou
                     {' '}
-                    {results.reduce((somatoriaAtual, resultAtual) => {
-                        const isRight = resultAtual === true
-                        if (isRight) {
-                            return somatoriaAtual + 1
+                        {results.reduce((somatoriaAtual, resultAtual) => {
+                            const isRight = resultAtual === true
+                            if (isRight) {
+                                return somatoriaAtual + 1
+                            }
+                            return somatoriaAtual
+
+                        }, 0)
+
                         }
-                        return somatoriaAtual
-
-                    }, 0)
-
-                    }
-                    {/* {finalResult = results.filter(result => result).length} */}
-                    {' '}
+                        {/* {finalResult = results.filter(result => result).length} */}
+                        {' '}
                     perguntas
                 </strong>
+                </p>
                 <ul>
                     {results.map((result, index) => (
                         <li>
-
                             {`${index + 1} Resultado: `}
                             {result === true ? "Acertou" : "Errou"}
-
                         </li>
                     )
                     )}
