@@ -17,11 +17,15 @@ const Widget = styled.div`
     color: ${({ theme }) => theme.colors.text}
   }
 
-  p {
+  p{
     font-size:14px;
     font-weight:400;
     line-height:1;
-    color: ${({ theme }) => theme.colors.text}
+    color: ${({ theme }) => theme.colors.text}60
+  }
+  ul, li {
+    list-style:none;
+    color: ${({ theme }) => theme.colors.text}80
   }
 `;
 Widget.Header = styled.header`

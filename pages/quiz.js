@@ -16,7 +16,7 @@ function ResultWidget({ results }) {
         </Widget.Header>
 
             <Widget.Content>
-                <p>
+                <strong>
                     Você acertou
                     {' '}
                     {results.reduce((somatoriaAtual, resultAtual) => {
@@ -32,14 +32,14 @@ function ResultWidget({ results }) {
                     {/* {finalResult = results.filter(result => result).length} */}
                     {' '}
                     perguntas
-                </p>
+                </strong>
                 <ul>
                     {results.map((result, index) => (
                         <li>
-                            <a>
-                                {`${index + 1} Resultado: `}
-                                {result === true ? "Acertou" : "Errou"}
-                            </a>
+
+                            {`${index + 1} Resultado: `}
+                            {result === true ? "Acertou" : "Errou"}
+
                         </li>
                     )
                     )}
