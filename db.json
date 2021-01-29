@@ -17,7 +17,8 @@
         }
     ],
     "external": [
-        "http://"
+        "https://naruto-quiz.llofyy.vercel.app/",
+        "https://myquiz-base.wesledev.vercel.app/"
     ],
     "theme": {
         "colors": {
