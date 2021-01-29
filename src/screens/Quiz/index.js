@@ -6,7 +6,8 @@ import QuizLogo from '../../components/QuizLogo/index';
 import Widget from '../../components/Widget/index';
 import Button from '../../components/Button/index';
 import AlternativeForm from '../../components/AlternativeForm/index';
-// import Loading from '../../components/LoadingWidget/index';
+import Loading from '../../components/LoadingWidget/index';
+import BackLinkArrow from '../../components/BackLinkArrow/index';
 
 function ResultWidget({ results }) {
     return (
@@ -70,7 +71,7 @@ function QuestionWidget({
     return (
         <Widget>
             <Widget.Header>
-                {/* <BackLinkArrow href="/" /> */}
+                <BackLinkArrow href="/" />
                 <h3>
                     {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
                 </h3>

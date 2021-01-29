@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import db from '../db.json';
 import Widget from '../src/components/Widget/index';
+import Link from '../src/components/Link/index';
 import Footer from '../src/components/Footer/index';
 import QuizContainer from '../src/components/QuizContainer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
@@ -10,6 +11,7 @@ import QuizBackground from '../src/components/QuizBackground/index';
 import Input from '../src/components/Input/index';
 import Button from '../src/components/Button/index';
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   const router = useRouter();
@@ -24,7 +26,16 @@ export default function Home() {
       </Head>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, dutation: 0.5 }}
+          variants={{
+            show: { opacity: 1, x: "0" },
+            hidden: { opacity: 0, x: "-100%" },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>Quiz Call of Duty Mobile</h1>
           </Widget.Header>
@@ -46,7 +57,16 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, dutation: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h2><strong>Quizis da galera</strong></h2><br />
             {/* <ul> */}
@@ -58,7 +78,7 @@ export default function Home() {
                 .split('.')
               return (
                 <div key={externalLink}>
-                  <Widget.Topic href={`/quiz/${projectName}___${githubUser}`}>
+                  <Widget.Topic as={Link} href={`/quiz/${projectName}___${githubUser}`}>
                     {`${githubUser}/${projectName}`}
                   </Widget.Topic>
                 </div>
@@ -67,7 +87,16 @@ export default function Home() {
             {/* </ul> */}
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.section}
+          transition={{ delay: 0.7, dutation: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/omnweb" />
     </QuizBackground>
