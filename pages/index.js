@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
+        <link rel="icon" href="assets/favicon/cod.ico" sizes="16x16" type="image/ico" />
         <meta property="og:title" content="COD Mobile Quiz" />
         <meta property="og:image" content={db.bg} />
         <title>COD Mobile Quiz</title>
@@ -56,8 +57,8 @@ export default function Home() {
                 .replace('vercel.app', '')
                 .split('.')
               return (
-                <div>
-                  <Widget.Topic href={externalLink}>
+                <div key={externalLink}>
+                  <Widget.Topic href={`/quiz/${projectName}___${githubUser}`}>
                     {`${githubUser}/${projectName}`}
                   </Widget.Topic>
                 </div>

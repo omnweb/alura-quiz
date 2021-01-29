@@ -1,12 +1,12 @@
 import React from 'react';
-import db from '../db.json';
-import QuizBackground from '../src/components/QuizBackground/index';
-import QuizContainer from '../src/components/QuizContainer/index';
-import QuizLogo from '../src/components/QuizLogo/index';
-import Widget from '../src/components/Widget/index';
-import Button from '../src/components/Button/index';
-import AlternativeForm from '../src/components/AlternativeForm/index';
-import Loading from '../src/components/LoadingWidget/index';
+// import db from '../../../db.json';
+import QuizBackground from '../../components/QuizBackground/index';
+import QuizContainer from '../../components/QuizContainer/index';
+import QuizLogo from '../../components/QuizLogo/index';
+import Widget from '../../components/Widget/index';
+import Button from '../../components/Button/index';
+import AlternativeForm from '../../components/AlternativeForm/index';
+// import Loading from '../../components/LoadingWidget/index';
 
 function ResultWidget({ results }) {
     return (
@@ -146,13 +146,14 @@ const screenStates = {
     RESULT: "RESULT",
 }
 
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING)
     const [results, setResults] = React.useState([])
-    const totalQuestions = db.questions.length
+    const totalQuestions = externalQuestions.length
     const [currentQuestion, setCurrentQuestion] = React.useState(0)
     const questionIndex = currentQuestion
-    const question = db.questions[questionIndex]
+    const question = externalQuestions[questionIndex]
+    const bg = externalBg
 
     function addResult(result) {
         setResults([
@@ -178,7 +179,7 @@ export default function QuizPage() {
     }
 
     return (
-        <QuizBackground backgroundImage={db.bg}>
+        <QuizBackground backgroundImage={bg}>
             <QuizContainer>
                 <QuizLogo />
                 {screenState === screenStates.QUIZ && <QuestionWidget

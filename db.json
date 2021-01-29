@@ -4,7 +4,7 @@
     "description": "Descrição do Quiz",
     "questions": [
         {
-            "image": "https://cdn-www.bluestacks.com/bs-images/codm-levelup-ptbr-1.jpg",
+            "image": "https://files.lafm.com.co/assets/public/giphy-22.gif",
             "title": "Qual a patente mais elevada em COD mobile?",
             "description": "Em partidas disputadas por ranking.",
             "answer": 1,
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "image": "https://i.pinimg.com/originals/44/f9/a3/44f9a3bd5e9952bfa916f1d12e3482b8.jpg",
+            "image": "https://64.media.tumblr.com/66abc6959b10fc69cd4f317983123379/278f975d196dd00b-5b/s640x960/3b8bf49d602670c6aee4ee5a85e3b1e001251f1a.gif",
             "title": "Qual é o limite máximo de evolução de um soldado?",
             "description": "Independente do personagem existe um limite de evolução.",
             "answer": 3,
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "image": "https://www.destructoid.com//ul/531054-nuketown%20black%20ops%204.jpg",
+            "image": "https://j4i2w7h7.stackpathcdn.com/wp-content/uploads/2019/03/call-of-duty-mobile-beta-sign-up.gif",
             "title": "Qual das alternativas não corresponde a um mapa do jogo?",
             "description": "Multijogador",
             "answer": 4,
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "image": "https://storage.googleapis.com/stateless-married-games/2020/09/18000f4c-call-of-duty-mobile-season-10-news.jpeg",
+            "image": "https://i1.wp.com/cdn.vox-cdn.com/uploads/chorus_asset/file/12861313/call_of_duty_black_ops_4_blackout_trailer_1.gif",
             "title": "Qual das alternativas não corresponde a um modo de jogo?",
             "description": "Multijogador",
             "answer": 2,
@@ -52,7 +52,7 @@
             ]
         },
         {
-            "image": "https://s2.glbimg.com/mOf0tUhfL-siwkifD3Wbo79Bv-o=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/A/5/tyc135QYaFaeqtqigSJw/granadas-cod-mobile.jpg",
+            "image": "https://i.pinimg.com/originals/6b/a5/b1/6ba5b16b5373be94a54f831f5f078544.gif",
             "title": "Qual desses artefactos se trata de uma arma letal?",
             "description": "Arremessáveis",
             "answer": 1,
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "image": "https://pbs.twimg.com/media/EZF0GkEXkAE9Ahl.jpg",
+            "image": "https://64.media.tumblr.com/e398dff8570ef36369a2964d3032de58/tumblr_polexna8xL1si4jeeo1_500.gifv",
             "title": "Qual das opções abaixo são mapas do COD Mobile?",
             "description": "Modo Battle Royale.",
             "answer": 4,
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "image": "https://cdn.ligadosgames.com/imagens/call-of-duty-mobile-helicoptero-usina-nuclear-cke.jpg",
+            "image": "https://i.pinimg.com/originals/ea/17/11/ea1711c9a5b7cd70ec58dd0dc703e8ca.gif",
             "title": "Com quais desses veículos é possível se locomover no jogo?",
             "description": "Battle Royale",
             "answer": 3,
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "image": "https://estnn.com/wp-content/uploads/2020/04/codmobile-052b.jpg",
+            "image": "https://img.taplb.com/md5/b8/cf/b8cf54ec0916f8f05991ebd9de0230c4/-_-/fit-in/1320x0/filters:quality(80):background_color(white):format(jpeg)",
             "title": "Qual desses nomes não pertence a um soldado do jogo?",
             "description": "Personagens padrão",
             "answer": 4,
@@ -100,7 +100,7 @@
             ]
         },
         {
-            "image": "https://i.pinimg.com/originals/a6/4d/af/a64daf3e02a4629c26eaee5b53dad168.jpg",
+            "image": "https://i.gifer.com/1nD2.gif",
             "title": "Quais são os tipos de de classe que um soldado pode utilizar?",
             "description": "Battle Royale",
             "answer": 2,
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "image": "https://i.ytimg.com/vi/ZuruGp_TfLI/maxresdefault.jpg",
+            "image": "https://66.media.tumblr.com/ad3ee766a784a8fa81b4f0a25f624862/tumblr_pony14R4Tv1tpl8d3o2_250.gifv",
             "title": "Qual das opções não é uma medalha ganha em batalhas?",
             "description": "Battle Royale",
             "answer": 4,
@@ -126,7 +126,8 @@
     ],
     "external": [
         "https://naruto-quiz.llofyy.vercel.app/",
-        "https://aluraquizpokemon.cesarrobertopg.vercel.app/"
+        "https://aluraquizpokemon.cesarrobertopg.vercel.app/",
+        "https://bbbquiz.kpmnta.vercel.app/"
     ],
     "theme": {
         "colors": {
